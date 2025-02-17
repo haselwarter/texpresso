@@ -36,8 +36,8 @@ void txp_renderer_free(fz_context *ctx, txp_renderer *r);
 
 enum txp_fit_mode
 {
-  FIT_WIDTH,
   FIT_PAGE,
+  FIT_WIDTH,
 };
 
 typedef struct

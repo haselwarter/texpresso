@@ -174,7 +174,7 @@ static fz_rect get_bounds(fz_context *ctx, txp_renderer *self)
 {
   fz_rect bounds = fz_bound_display_list(ctx, self->contents);
 
-  if (!self->config.crop)
+  if (self->config.crop)
     return bounds;
 
   if (!self->contents_bounds_valid)
